@@ -67,9 +67,12 @@ nano /etc/ssh/sshd_config
 ```
 Then make the following changes in the file:
 ```
+Port <any-non-default>
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
+
+service sshd restart
 
 4. Proxmox installation
 

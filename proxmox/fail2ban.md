@@ -26,6 +26,19 @@ maxretry = 3
 bantime = 3600
 ```
 
+Optionally change default settings and ssh port:
+```
+[DEFAULT]
+bantime = 84600
+findtime = 600
+maxretry = 3
+destemail = root@example.com
+sendername = Fail2ban
+action = %(action_mwl)s
+[sshd]
+enabled = true
+port = <port>
+```
 
 4. create conf for proxmox in fail2ban
 
